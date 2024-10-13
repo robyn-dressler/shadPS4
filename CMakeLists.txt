@@ -140,6 +140,12 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "Ap
     endif()
 endif()
 
+if(Boost_FOUND)
+  include_directories(${Boost_INCLUDE_DIRS})
+  message(${Boost_PROGRAM_OPTIONS_LIBRARIES})
+  target_link_libraries(shadps4 PRIVATE ${Boost_PROGRAM_OPTIONS_LIBRARIES})
+endif()
+
 add_subdirectory(externals)
 include_directories(src)
 
