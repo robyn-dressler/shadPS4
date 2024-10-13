@@ -62,7 +62,7 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: robyn-dressler/shadps4-ext-boost
         path: external/ext-boost
@@ -113,7 +113,7 @@ jobs:
         submodules: recursive
     
     - name: Checkout modified ext-boost
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: robyn-dressler/shadps4-ext-boost
         path: external/ext-boost
@@ -181,7 +181,7 @@ jobs:
         submodules: recursive
     
     - name: Checkout modified ext-boost
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: robyn-dressler/shadps4-ext-boost
         path: external/ext-boost
@@ -244,7 +244,7 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: robyn-dressler/shadps4-ext-boost
         path: external/ext-boost
@@ -315,7 +315,7 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: robyn-dressler/shadps4-ext-boost
         path: external/ext-boost
@@ -378,7 +378,7 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: robyn-dressler/shadps4-ext-boost
         path: external/ext-boost
