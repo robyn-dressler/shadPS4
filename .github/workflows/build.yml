@@ -62,9 +62,11 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      run: |
-        cd externals/ext-boost
-        git checkout origin/program_options
+      uses: actions/checkout@v2
+      with:
+        repository: robyn-dressler/shadps4-ext-boost
+        path: external/ext-boost
+        ref: 'program_options'
 
     - name: Cache CMake Configuration
       uses: actions/cache@v4
@@ -111,9 +113,11 @@ jobs:
         submodules: recursive
     
     - name: Checkout modified ext-boost
-      run: |
-        cd externals/ext-boost
-        git checkout origin/program_options
+      uses: actions/checkout@v2
+      with:
+        repository: robyn-dressler/shadps4-ext-boost
+        path: external/ext-boost
+        ref: 'program_options'
 
     - name: Setup Qt
       uses: jurplel/install-qt-action@v4
@@ -177,9 +181,11 @@ jobs:
         submodules: recursive
     
     - name: Checkout modified ext-boost
-      run: |
-        cd externals/ext-boost
-        git checkout origin/program_options
+      uses: actions/checkout@v2
+      with:
+        repository: robyn-dressler/shadps4-ext-boost
+        path: external/ext-boost
+        ref: 'program_options'
 
     - name: Setup latest Xcode
       uses: maxim-lobanov/setup-xcode@v1
@@ -238,9 +244,11 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      run: |
-        cd externals/ext-boost
-        git checkout origin/program_options
+      uses: actions/checkout@v2
+      with:
+        repository: robyn-dressler/shadps4-ext-boost
+        path: external/ext-boost
+        ref: 'program_options'
 
     - name: Setup latest Xcode
       uses: maxim-lobanov/setup-xcode@v1
@@ -307,9 +315,11 @@ jobs:
         submodules: recursive
 
     - name: Checkout modified ext-boost
-      run: |
-        cd externals/ext-boost
-        git checkout origin/program_options
+      uses: actions/checkout@v2
+      with:
+        repository: robyn-dressler/shadps4-ext-boost
+        path: external/ext-boost
+        ref: 'program_options'
 
     - name: Install dependencies
       run: sudo apt-get update && sudo apt install -y libx11-dev libxext-dev libwayland-dev libdecor-0-dev libxkbcommon-dev libglfw3-dev libgles2-mesa-dev libfuse2 clang build-essential libasound2-dev libpulse-dev libopenal-dev
@@ -367,10 +377,12 @@ jobs:
       with:
         submodules: recursive
 
-    - name: Checkout modified ext-boost
-      run: |
-        cd externals/ext-boost
-        git checkout origin/program_options
+      - name: Checkout modified ext-boost
+      uses: actions/checkout@v2
+      with:
+        repository: robyn-dressler/shadps4-ext-boost
+        path: external/ext-boost
+        ref: 'program_options'
 
     - name: Install dependencies
       run: sudo apt-get update && sudo apt install -y libx11-dev libxext-dev libwayland-dev libdecor-0-dev libxkbcommon-dev libglfw3-dev libgles2-mesa-dev libfuse2 clang build-essential qt6-base-dev qt6-tools-dev qt6-multimedia-dev libasound2-dev libpulse-dev libopenal-dev
