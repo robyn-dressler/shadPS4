@@ -6,6 +6,7 @@
 #include <common/version.h>
 #include <fmt/core.h>
 #include <fmt/xchar.h> // for wstring support
+#include <boost/program_options/config.hpp>
 #include <toml.hpp>
 #include "common/logging/formatter.h"
 #include "common/path_util.h"

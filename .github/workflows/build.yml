@@ -61,6 +61,11 @@ jobs:
       with:
         submodules: recursive
 
+    - name: Checkout modified ext-boost
+      run: |
+        cd externals/ext-boost
+        git checkout program_options
+
     - name: Cache CMake Configuration
       uses: actions/cache@v4
       env:
@@ -104,6 +109,11 @@ jobs:
     - uses: actions/checkout@v4
       with:
         submodules: recursive
+    
+    - name: Checkout modified ext-boost
+      run: |
+        cd externals/ext-boost
+        git checkout program_options
 
     - name: Setup Qt
       uses: jurplel/install-qt-action@v4

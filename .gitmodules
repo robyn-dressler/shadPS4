@@ -72,7 +72,7 @@
 	shallow = true
 [submodule "externals/ext-boost"]
 	path = externals/ext-boost
-	url = https://github.com/shadps4-emu/ext-boost.git
+	url = git@github.com:robyn-dressler/shadps4-ext-boost.git
 	shallow = true
 [submodule "externals/date"]
 	path = externals/date
